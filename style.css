@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c9cbcc;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 1205px;
+   margin-top: 39px;
+   margin-left: 42px;
+}
+
+header h1 {
+   font-size: 35px;
+   color: #2d2d80;
+}
+
+input {
+   padding: 0.4rem 1rem;
+   text-align: center;
+}
+
+.container {
+   display: grid;
+   grid-template-areas: "nav nav main main main main main"
+   "nav nav aside aside section1 section1 section2"
+   "nav nav footer footer footer footer footer";
+}
+
+nav {
+   background-color: #24249b;
+   grid-area: nav;
+   width: 250px;
+   height: auto;
+   padding: 45px 0px;
+   margin-left: 35px;
+}
+
+nav a {
+   display: block;
+   padding: 20px 50px;
+   color: #ecebeb;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color:#0d0d85;
+
+}
+
+nav .keluar {
+   color: #80451b;
+}
+
+main {
+   background-color:#2626dd;
+   grid-area: main;
+   width: 988px;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 1rem;
+}
+
+.title  {
+   margin-left: 12px;
+   color:white;
+}
+
+.title p {
+   margin-top: 10px;
+}
+
+.profil img{
+   width: 145px;
+   height: 145px;
+   margin: 1rem;
+   border-radius: 50%;
+}
+
+aside {
+  background-color: white;
+  grid-area: aside;
+  width: 510px;
+  margin-left: 1rem;
+  margin-top: 9px;
+}
+
+aside h3 {
+  margin-top: 10px;
+  margin-left: 8px;
+  color: #968c8c;
+}
+
+aside img {
+  width: 455px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 9px;
+  border-radius: 4px;
+}
+
+.section1 {
+  grid-area: section1;
+  margin-top: 12px;
+  background-color: #dfd7d7;
+  width: 205px;
+}
+
+.matkul, .aktifitas {
+  background-color:white;
+}
+
+.section1 h3, .matkul, .section2 h3, .aktifitas {
+  margin: 10px;
+  color: #686363;
+}
+
+.matkul p, .aktifitas p {
+  margin-top: 6px;
+  color: #2178e4;
+}
+
+.section2 {
+  grid-area: section2;
+  margin-top: 12px;
+  background-color:#dfd7d7;
+  width: 255px;
+  margin-right: 1.3rem;
+}
+
+footer {
+  background-color: white;
+  grid-area: footer;
+  margin-top: 12px;
+  margin-left: 1rem;
+  width: 985px;
+}
+
+footer h3, .dokumen {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #776e6e;
+  padding: 1rem;
+  background-color: #f8f1f1;
+}
+
+
+footer p span {
+  color: #262727;
+  font-weight: bold;
+}
